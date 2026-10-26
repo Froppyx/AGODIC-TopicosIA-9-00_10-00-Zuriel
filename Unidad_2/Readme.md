@@ -1,12 +1,12 @@
 <img width="778" height="331" alt="image" src="https://github.com/user-attachments/assets/20ffa31b-a3b8-4536-9c42-fd2457263d5c" />
 
-# Unidad 2
+# Unidad 2 — Optimización Combinatoria, Heurísticas y Metaheurísticas
 
 Carpeta de prácticas, investigaciones y proyectos de la **Unidad 2** para la materia **Tópicos de IA** en el **Instituto Tecnológico de Culiacán**.
 
-* **Docente:** Dr. Zuriel Datan Mora Félix
+* **Docente:** M.C. Zuriel Datan Mora
 * **Integrantes:**
-  * Mariana Manjarrez Olvias
+  * Mariana Manjarrez Olivas
   * Carlos Iván Cervantes Araujo
 
 ---
@@ -15,6 +15,7 @@ Carpeta de prácticas, investigaciones y proyectos de la **Unidad 2** para la ma
 
 1. [Tarea Bonus II: Modelación y Representación Formal](#1-tarea-bonus-ii-modelación-y-representación-formal)
 2. [Problema de las N-Reinas con Búsqueda Tabú](#2-problema-de-las-n-reinas-con-búsqueda-tabú)
+3. [Proyecto 2: Optimización de Rutas mediante Recocido Simulado](#3-proyecto-2-optimización-de-rutas-mediante-recocido-simulado)
 
 ---
 
@@ -44,12 +45,28 @@ Resolución del clásico problema de ubicar 8 reinas en un tablero de $8 \times 
 * **Función Objetivo ($h$):** Número de pares de reinas que comparten fila o diagonal.
 * **Vecindario:** Movimiento de una reina a otra fila dentro de su columna ($8 \times 7 = 56$ vecinos evaluados por paso).
 * **Memoria de Corto Plazo (Lista Tabú):** Pares `(columna, fila)` abandonados recientemente, con **Tenencia = 10**.
-* **Criterio de Aspiración:** Permite ejecutar un movimiento marcado como tabú si su valor $h$ mejora al mejor mínimo histórico global.
+* **Criterio de Aspiración:** Permite ejecutar un movimiento tabú si su valor $h$ mejora al mejor mínimo histórico global.
 * **Límite de Parada:** $h = 0$ o máximo 1000 iteraciones.
 
 ### 📊 Métricas de Desempeño Promedio (100 ejecuciones aleatorias)
 * **Tasa de éxito:** 100 / 100 (100% de convergencia a soluciones óptimas con $h = 0$).
 * **Movimientos promedio:** ~13.22 movimientos.
+* **Tiempo promedio de ejecución:** ~3.612 ms (medido con `time.perf_counter()`).
+
+📄 **Entregables:** 
+* `Problema de las N-Reinas con Búsqueda Tabú.pdf` — Reporte técnico y formulación.
+* `reinas_tabu.py` — Código fuente documentado con benchmarks.
+
+---
+
+## 3. Proyecto 2: Optimización de Rutas mediante Recocido Simulado
+> **Ruteo logístico multi-depósito (10 centros y 90 sucursales en Culiacán, Sin.) resuelto mediante Simulated Annealing.**
+
+* **Reducción de Distancia:** De **421.78 km** a **205.35 km** (**51.31% de ahorro global**).
+* **Acceso Completo y Código:** Toda la documentación, el notebook ejecutable y el video explicativo se encuentran dentro del directorio dedicado:
+  * 📁 [**Ver carpeta Proyecto_2**](./Proyecto_2/)
+
+---
 * **Tiempo promedio de ejecución:** ~3.612 ms (medido con `time.perf_counter()`).
 
 ### 💻 Ejecución
