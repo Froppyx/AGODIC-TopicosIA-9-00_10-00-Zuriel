@@ -16,7 +16,7 @@
 
 ## 🔗 Enlaces Directos y Entregables
 
-[![Proyecto 3 - Notebook](https://img.shields.io/badge/Proyecto_3-Abrir_en_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/11qhTN67yXb8EWfSNhAoPAK7AIPEEXtl?usp=sharing)
+[![Proyecto 3 - Notebook]([https://img.shields.io/badge/Proyecto_3-Abrir_en_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/11qhTN67yXb8EWfSNhAoPAK7AIPEEXtl?usp=sharing](https://colab.research.google.com/drive/11qhTN67yXb8EWfSNhAo_PAK7AIPeEXtI?usp=sharing))
 
 ### 📁 Estructura de Archivos en esta Carpeta
 * `Topicos_IA_Cervantes___Manjarrez_Proyecto_3_PSO.ipynb` — Notebook ejecutable con el código fuente en Python, pruebas de corrida y gráficas de convergencia.
